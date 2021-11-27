@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+		match /reviews/{review} {
+    	allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == "Fv2wvxhFQIeMTBmJpmxe0X5pQ743";
+    }
+    match /reviewSlugs/{reviewSlug} {
+    	allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == "Fv2wvxhFQIeMTBmJpmxe0X5pQ743";
+    }
+    match /blogSlugs/{blogSlug} {
+    	allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == "Fv2wvxhFQIeMTBmJpmxe0X5pQ743";
+    }
+    match /blog/{b} {
+    	allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == "Fv2wvxhFQIeMTBmJpmxe0X5pQ743";
+    }
+    match /posts/{post} {
+    	allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == "Fv2wvxhFQIeMTBmJpmxe0X5pQ743";
+    }
+    function isSignedIn() {
+      return request.auth.uid != null;
+    }
+  }
+}

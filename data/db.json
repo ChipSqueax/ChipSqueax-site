@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "My day",
+      "author": "Bharath1",
+      "body": "blah blah...",
+      "id": 2
+    },
+    {
+      "title": "CSE",
+      "author": "Bharath2",
+      "body": "blah blah...",
+      "id": 3
+    }
+  ]
+}
