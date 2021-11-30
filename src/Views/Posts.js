@@ -3,13 +3,12 @@
     Each post is got from the post component.
 */
 
-import {CssBaseline, CircularProgress, Button, Container, Menu, MenuItem, Typography, muiske} from "@material-ui/core";
+import {CssBaseline, CircularProgress, Button, Container, Menu, MenuItem, Typography} from "@material-ui/core";
 import fbRef from '../Database/firebase';
 import { useEffect, useState } from "react";
-import { Link, useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Post from "../Components/Post";
 import { useStyles } from "../Views/Styles";
-import Footer from "../Components/Footer";
 import Sort from '@material-ui/icons/Sort';
 
 const Posts = () => {

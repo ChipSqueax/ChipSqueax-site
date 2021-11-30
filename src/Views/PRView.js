@@ -18,7 +18,6 @@ const PRView = (props) => {
 
     const [markdown, setMarkdown] = useState('');
     const [markdownPending, setMarkdownPending] = useState(true);
-    const [id, setId] = useState(null);
 
     const getPR = (PRQuery)=>{
         const markdown = PRQuery.data().body;
@@ -30,7 +29,6 @@ const PRView = (props) => {
         const slugQuery = await fbRef.db.collection(PRSlugs).doc(slug).get();
         const id = slugQuery.data().id;
         const PRQuery = await fbRef.db.collection(PR).doc(id).get();
-        setId(id);
         return PRQuery;
     }
 

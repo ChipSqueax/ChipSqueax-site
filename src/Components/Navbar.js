@@ -40,7 +40,6 @@ export default function NavBar() {
   }
 
   useEffect(()=>{
-    console.log('Use Effect called');
     let isMounted = true;
     if (isMounted){
       var path = window.location.pathname;

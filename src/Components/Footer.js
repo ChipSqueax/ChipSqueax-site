@@ -1,6 +1,6 @@
 import { useStyles } from "./Styles";
 import { YouTube, GitHub, Instagram } from "@material-ui/icons";
-import { IconButton, Grid, Toolbar, Box, Container, Typography } from "@material-ui/core";
+import { IconButton, Grid, Toolbar, Box, Typography } from "@material-ui/core";
 
 
 const Footer = () => {

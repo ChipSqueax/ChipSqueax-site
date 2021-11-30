@@ -1,9 +1,8 @@
 import Slider from "react-slick";
 import '../Views/slick-theme.css';
 import '../Views/slick.css';
-import { Box, Container, Paper, Typography, CircularProgress, Fade, Slide } from "@material-ui/core";
+import { Box, Paper, Typography, Slide } from "@material-ui/core";
 import { useStyles } from "../Views/Styles";
-import { useState } from "react";
 
 
 const Post = (props) => {
@@ -29,7 +28,7 @@ const Post = (props) => {
                         {   
                             post.downloadURLS.map((url)=>(                                
                                 <div key={url}>
-                                    <img src={url} className={classes.Image}/>
+                                    <img alt={url} src={url} className={classes.Image}/>
                                 </div>
                             ))
                         }   

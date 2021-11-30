@@ -7,15 +7,29 @@ const About = () => {
     return (
         <div>
             <CssBaseline/>
-                <Container maxWidth="md" style={{marginTop: 128}}>
-                <div className={classes.Body}>
-                    <Typography variant="h1" style={{margin: 16}}>About</Typography>
+                <Container maxWidth="md" style={{marginTop: 64}}>
+                <div style={{
+                        marginTop: 16,
+                        backgroundColor: "#272b31",
+                        borderRadius: 16,
+                        textAlign: 'center',
+                        color: "ffffff",
+                        padding: 16,
+                    }}
+                >
+                    <Typography variant="h2" className={classes.Head} style={{margin: 16}}>About</Typography>
                     <div style={{margin: 16}}>
                         <Typography variant="body2" className={classes.BlockText}>
                             CS | ML | Minimalism | Stoicism
                         </Typography>
                         <Typography variant="body2" className={classes.Body}>
-                            Reach me at<Button style={{background: 'none'}} disableRipple href="mailto:bharathkk0603@gmail.com"><Email fontSize="large"/></Button>
+                            I'm a guy that has always loved learning about computers and working with them. Currently, I'm working towards improving my skills in Machine Learning.
+                        </Typography>
+                        <Typography variant="body2" className={classes.Body}>
+                            I also like making video content during my free time and you can find my videos on my YouTube channel linked below.
+                        </Typography>
+                        <Typography variant="body2" className={classes.Body}>
+                            You can reach me at<Button style={{background: 'none'}} disableRipple href="mailto:bharathkk0603@gmail.com"><Email color="secondary" fontSize="large"/></Button>
                         </Typography>                    
                     </div>
                 </div>

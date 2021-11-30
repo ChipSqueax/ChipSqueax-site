@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useStyles } from "../Views/Styles";
 import fb from "../Database/firebase";
 import { Slide } from "@material-ui/core";
 
@@ -8,7 +7,6 @@ function SlideTransition(props) {
 }
 
 const PRHandler = (collection, orderby) => {
-    const classes = useStyles();
     const [state, setState] = useState({
         open: false,
         Transition: SlideTransition,

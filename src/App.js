@@ -3,7 +3,7 @@ import Footer from "./Components/Footer.js";
 import Navbar from "./Components/Navbar.js";
 import Home from "./Views/Home.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Projects from "./Views/Blog.js";
+import Blog from "./Views/Blog.js";
 import Posts from "./Views/Posts.js";
 import About from "./Views/About.js";
 import Reviews from "./Views/Reviews.js";
@@ -22,6 +22,7 @@ function App() {
             backgroundAttachment: "fixed",
             backgroundImage: `url(${bg})`,
             backgroundPosition: '50% 50%',
+            backgroundSize: 'cover',
           },
         },
       },
@@ -48,7 +49,7 @@ function App() {
               <Navbar/>
               <Switch>
                 <Route exact path='/'><Home/></Route>
-                <Route exact path='/blog'><Projects/></Route>
+                <Route exact path='/blog'><Blog/></Route>
                 <Route exact path='/blog/:slug'><PRView PRSlugs="blogSlugs" PR="blog"/></Route>
                 <Route exact path='/reviews/:slug'><PRView PRSlugs="reviewSlugs" PR="reviews"/></Route>
                 <Route exact path='/reviews'><Reviews/></Route>

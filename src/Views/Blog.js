@@ -19,7 +19,7 @@ const Projects = () => {
             <CssBaseline/>
             <Container maxWidth='md'>
             <Typography variant='h5' className={classes.Body}>
-                I'll be writing <Typography className={classes.BlockText} variant='button'>Blog</Typography> posts on topics that I find interesting.
+                I'll be writing <Typography className={classes.BlockText} variant='button'>Blogs</Typography> on topics that I find interesting.
             </Typography>
             {blogPending?<div className={classes.ProgressCircle}><CircularProgress color='secondary' thickness={5}/></div>:
             blog.map(b=>(

@@ -1,5 +1,4 @@
-import { Snackbar, SnackbarContent, Slide } from "@material-ui/core";
-import { useState } from "react";
+import { Snackbar, SnackbarContent } from "@material-ui/core";
 import { useStyles } from "../Views/Styles";
 
 const SnackBar = (props) => { 

@@ -51,6 +51,9 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     GradientText:{
+        [theme.breakpoints.down('md')]:{
+            fontSize: 32,
+        }, 
         fontSize: 64,
         background: "-webkit-linear-gradient(90deg, rgba(78,204,163,1) 0%, rgba(165,231,170,1) 100%)",
         WebkitBackgroundClip: "text",
